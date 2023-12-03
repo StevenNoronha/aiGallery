@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-// password of mongodb : dTi3wLZ2Bz5K9z0T
+
 
 // database connection using mongodb atlas
-const mongoURI = 'mongodb+srv://camraobro:dTi3wLZ2Bz5K9z0T@cluster0.sxheesi.mongodb.net/?retryWrites=true&w=majority'
+const mongoURI = 'ADD YOUR URL HERE'
 const mongoDB = async () => {
     try {
         await mongoose.connect(mongoURI, { useNewUrlParser: true });
