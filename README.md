@@ -1,7 +1,9 @@
 # Aesthetic Alchemy - aiGallery
 
-This is the source code of Aesthetic Alchemy website.
+This is the source code of Aesthetic Alchemy website.<br>
+Only front end demo - [Demo](https://aestheticalchemy.netlify.app/)<br>
 [Figma Link](https://www.figma.com/file/Dsuf2JYOjjqjfSKJvoBacJ/Untitled?type=design&node-id=1%3A2&mode=design&t=LbUgYvNIM0FJWYc7-1)
+
 
 # Tech Stack
 
