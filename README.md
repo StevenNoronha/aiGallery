@@ -1,6 +1,7 @@
 # Aesthetic Alchemy - aiGallery
 
 This is the source code of Aesthetic Alchemy website.
+[Figma Link](https://www.figma.com/file/Dsuf2JYOjjqjfSKJvoBacJ/Untitled?type=design&node-id=1%3A2&mode=design&t=LbUgYvNIM0FJWYc7-1)
 
 # Tech Stack
 
@@ -55,3 +56,18 @@ This is the source code of Aesthetic Alchemy website.
    ```
    If it shows "Connected successfully" in the terminal your good to go!
    If not add your IP address to your mongoDB server on atlas to access the db server locally from your machine
+
+### Screenshots
+
+![image](https://github.com/StevenNoronha/aiGallery/assets/125193808/d2ef2bee-1aec-42ff-a50e-55a4cb8681f0)
+
+![image](https://github.com/StevenNoronha/aiGallery/assets/125193808/cfde7ab5-91ca-40bc-b677-2e2548ed7b05)
+
+![image](https://github.com/StevenNoronha/aiGallery/assets/125193808/53080583-cdbd-4431-a898-9f0280eaacff)
+
+![image](https://github.com/StevenNoronha/aiGallery/assets/125193808/91d1e3f9-0ca7-47fe-8f76-291818a6d949)
+
+
+
+
+
