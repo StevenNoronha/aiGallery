@@ -1,0 +1,384 @@
+/* fonts imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Nova+Square&display=swap');
+
+/* styling applied to the whole body of the webpage */
+html, body{
+  margin: 0;
+  font-family: 'Nova Square', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(182, 178, 208);
+}
+
+/* background colour of all pages */
+body{
+  background: #0E131F;
+}
+
+/* utility classes */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+p {
+  margin: 0px;
+}
+
+input {
+  padding: .75rem;
+  width: 40rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 2px AF40FF solid;
+  color: #AF40FF;
+  background-color: #eef6ffce;
+  margin: 15px;
+  margin-right: 40px;
+  font-family: "Nova Square";
+}
+
+::placeholder {
+  color: #AF40FF;
+  opacity: .8; /* Firefox */
+}
+
+/* navbar styling */
+nav {
+  height: 2.5rem;
+  width: 95%;
+  margin: 30px auto;
+  background-color: #38405F;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.navText {
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling applied to add gif as background */
+.main {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+}
+
+.main::before {
+  content: "";
+  background-image: url('https://i.gifer.com/Ozs.gif');
+  background-size: cover;
+  position: fixed;
+  top: -200px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  z-index: -50;
+}
+
+/* button styling */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 80%;
+  min-width: 140px;
+  font-family: 'Nova Square';
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+/* button text styling */
+.button-64 span {
+  background-color: #090a41;
+  padding: 10px 1px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+/* button animations */
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 126px;
+  }
+}
+
+/* styling applied to hero section */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB)#000;
+}
+
+/* main heading in hero section */
+.hero h1{
+  font-size: 7rem;
+  margin: 7px;
+  text-align: center;
+  background: -webkit-linear-gradient(#AF40FF, #5B42F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* sub heading in hero section */
+.hero-text {
+  width: 85%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #261b4b9d;
+  border-radius: 2rem;
+}
+
+/* horizontal rule styling */
+hr {
+  width: 75%;  
+  margin-top: 0px;
+  height: 1.5px;
+  background-color: white;
+}
+
+.hero p{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+/* animations in hero section */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-in-container {
+  width: 100%;
+  animation: fadeInFromBelow 1.5s forwards;
+  animation-delay: .5s;
+}
+
+@keyframes fadeInFromBelow {
+  0% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* div spacing in hero section */
+.spacing {
+  height: 3.5rem;
+}
+
+/* gallery section */
+
+/* containers for proper styling */
+.container1 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
+}
+
+.container2 {
+  width: 75%;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.container1 > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.container1 > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 2px 16px var(--shadow);
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* footer section styling */
+.footer {
+  width: 100%;
+  text-align: center;
+  height: 4rem;
+  background-color: #000;
+  justify-content: space-around;
+}
+
+/* logos styling individually styled */
+.logos {
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* logo styling */
+.footlogos {
+  align-items: center;
+}
+
+/* login section styling */
+.containerlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  background-color: #1e213a;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 4px solid #19d4ca;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* login input styling */
+.input1 {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  transition: box-shadow 0.3s;
+  width: auto;
+}
+
+.input1:focus {
+  box-shadow: 0 0 10px #19d4ca;
+}
+
+/* login form buttons */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-button,
+.register-link {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  text-decoration: none;
+  font-family: "Nova Square";
+  font-size: 1rem;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #19d4ca;
+}
+
+.login-button:hover {
+  background-color: #19d4ca;
+  color: #fff;
+  box-shadow: none;
+}
+
+.login-button:active {
+  box-shadow: 0 0 10px #19d4ca;
+}
+
+.register-link {
+  color: #ccc;
+  background-color: transparent;
+}
+
+.register-link:hover {
+  color: #fff;
+}
+
+.register-link:active {
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* styling for login button */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
