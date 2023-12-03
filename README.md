@@ -25,6 +25,7 @@ This is the source code of Aesthetic Alchemy website.
      Install all the dependencies
 
    ```bash
+   cd aiGallery
    cd frontend
    npm install # This will install all the required dependencies for the front-end
    ```
